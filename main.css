@@ -1,0 +1,129 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map{
+	height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#uploadedcontainer{
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 10px 20px;
+}
+#loadinglist{
+	list-style: none;
+	padding: 0;
+}
+.loadinglistelement{
+	margin: .3em 0;
+}
+#departuretimes{
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+@media(min-width: 600px){
+	#departuretimes{
+		max-width: 370px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		border-left: 2px solid black;
+	}
+}
+@media(max-width: 600px){
+	#departuretimes{
+		width: 100%;
+		height: 40%;
+		bottom: 0;
+	}
+}
+#stopheadingdiv{
+	width: 100%;
+	padding: 0.3em 0.2em;
+	background-color: blue;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+#stopname{
+	display: inline-block;
+	font-size: 1.6em;
+	margin: 0;
+	color: white;
+}
+#closestopbutton{
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 1em;
+	width: 2em;
+	height: 2em;
+	border-width: 3px;
+	border-style: solid;
+	border-color: red;
+	border-radius: 100%;
+	background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+	background-color: red;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+}
+#optionscontainer{
+	margin-bottom: .5em;
+	padding:0 .5em;
+}
+#dateselector{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+}
+#hidestopslabel{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 0.25em;
+}
+#hidestops{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+#scheduleemaillink{
+	margin-left: .5em;
+}
+#routesandtripscontainer{
+	height: 0;
+	flex: 1 1 auto;
+	overflow-y: auto;
+}
+#tripslistcontainer{
+	margin-top: .5em;
+}
+#routeslist, #tripslist{
+	list-style: none;
+	margin: 0;
+	padding: 0 .5em;
+}
+.routecheckbox{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.routecolor{
+	display: inline-block;
+	vertical-align: middle;
+	width: 2em;
+	height: 1em;
+	margin-left: .4em;
+}
+.routename{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: .4em;
+}
